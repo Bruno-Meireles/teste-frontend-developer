@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    --branco: #FFF;
+    --cor--fundo--cabecalho: #2C3333 ;
+    --cor--azul-claro: #CBE4DE;
+    --cor--fundo--verde-claro--: #2E4F4F;
+         
+    
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Logo  da pagina */
+
+body {
+    width: 98vw;
+    background-color: var(--cor--azul-claro);
+}
+
+.cabecalho {
+    text-align: center;
+    background-color:var(--cor--azul-claro);
+}
+
+.cabecalho-telefone {
+    border: 3px solid var(--cor--azul-claro);
+    background-color:var(--branco);
+    font-size: 1.80rem;
+    text-decoration: none;
+    color: var(--cor--fundo--cabecalho);
+    margin: 0 15px 0 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+a :hover  {
+    color:#B5F1CC ;    
+    transition: 0.5s;
+}
+
+
+.cabecalho-whatsapp {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor--fundo--cabecalho); 
+}
+
+:hover .cabecalho-whatsapp {
+    background-color: #000000;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+.icone {
+   font-size: 3rem;
+}
+
+
+.apresentacao {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--cor--azul-claro);
+    color: var(--branco);
+}
+
+.apresentacao-titulo {
+    margin: 40px;
+    font-size: 2rem;
+    color: var(--cor--fundo--verde-claro--);
+}
+
+.apresentacao-paragrafo {
+    color: var(--cor--fundo--cabecalho);
+    font-size: 1.80rem;
+}
+
+.formulario {
+   text-align: center;  
+   border: solid 2px #FFF;
+   background-color: var(--branco);
+   margin: 40px 15px 0 15px;    
+   border-radius: 8px;
+   padding: 10px;
+}
+
+.formulario-titulo {
+    font-size: 2rem;
+    color: var(--cor--fundo--cabecalho);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+input {
+    margin: 15px 0px 15px;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 1.40rem;
+}
+
+::placeholder {
+    color: var(--cor--fundo--cabecalho);
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    padding: 7px ;
+    margin-top: 6px;
+    font-size: 1.73rem;
+    border-radius: 8px;
+    
+}
+
+
+button {
+   margin: 20px;
+   font-size: 1.73rem;
+   width: 312px;
+   height: 52px;
+   background-color: var(--cor--fundo--cabecalho);
+   color: var(--cor--azul-claro);
+   border-radius: 8px;
+   cursor: pointer;
+}
+ :hover button {
+    color:var(--cor--fundo--cabecalho) ; 
+    background-color: var(--cor--azul-claro);   
+    transition: 0.5s;
+ }
+
+  /* Quem somos */ 
+
+
+.sobre-imagem {
+    margin: 50px 0px 15px 0px;
+    width: 413px;
+}
+
+.sobre {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sobre-titulo {
+    font-size: 2rem;
+    padding: 20px;
+    color: var(--cor--fundo--cabecalho);
+}
+
+.sobre-paragrafo {
+    font-size: 1.73rem;
+    margin: 40px;    
+}
+
+
+/* Vantagens */
+
+
+.vantagens-titulo {
+    font-size: 2rem;
+    margin: 20px;
+    color: var(--cor--fundo--cabecalho);
+}
+
+.icons {
+    font-size: 2.5rem;
+    color: var(--cor--fundo--cabecalho);
+    padding: 14px;
+}
+.vantagens-box-titulo {
+    font-size: 2rem;
+    color: var(--cor--fundo--cabecalho);
+}
+
+
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vantagens-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 13px;
+    margin: 10px;
+}
+
+.vantagens-box-subtitulo {
+    font-size: 1.73rem;
+    margin: 12px;
+}
+
+
+/* Perguntas frequentes */
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--branco);
+    width: 100vw;
+}
+
+.title-perguntas {
+    font-size: 2rem;
+    margin: 40px;
+}
+
+.perguntas-titulo {
+    font-size: 1.73rem;
+    border: solid 1px var(--cor--fundo--cabecalho);
+    margin: 8px 5px 25px 5px;
+    
+    padding: 0 5px 0 5px;   
+}
+
+
+/*  Primeira versão em até 5 dias úteis */
+
+
+.enviar-agendar {
+    margin: 50px 15px 15px 15px;
+    background-color: var(--branco);
+    border-radius: 8px;    
+}
+
+.chamada-final {
+    display: flex;
+    flex-direction: column;
+}
+
+.chamada-titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    color: var(--cor--fundo--cabecalho);
+}
+
+.chamada-paragrafo {
+    font-size: 1.73rem;
+    margin: 18px;
+}
+
+.text-color { 
+    color: #C92C6D;
+}
+
+.tenha-acesso {
+    color: var(--cor--fundo--cabecalho);
+}
+.paragrafo {
+    font-size: 1.3rem;
+    color: var(--cor--fundo--cabecalho);
+}
+
+/* Footer */
+
+
+.footer-text {
+    text-align: center;
+    background-color: var(--cor--fundo--cabecalho);
+    color: #FFF;
+}
