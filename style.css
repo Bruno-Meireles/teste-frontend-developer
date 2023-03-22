@@ -11,6 +11,7 @@
     
 
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 /* Logo  da pagina */
@@ -37,7 +38,7 @@ body {
 .cabecalho-whatsapp {
     display: flex;
     justify-content: center;
-    gap: 11px;
+    gap: 20px;
     padding: 5px;
     align-items: center;
     text-decoration: none;
@@ -108,7 +109,7 @@ textarea {
     
 }
 
-button {
+.botao {
    margin: 15px auto;
    font-size: 1.73rem;
    width: 312px;
@@ -118,14 +119,18 @@ button {
    border-radius: 8px;
    cursor: pointer;
 }
- :hover button {
-    color:var(--cor--letras) ; 
-    background-color: var(--cor--fundo);   
+
+button:hover {
+    color:var(--cor--fundo); 
+    background-color: var(--cor--titulo);   
     transition: 0.5s;
  }
 
   /* Quem somos */ 
 
+.sobre-conteudo {
+    margin-bottom: 47px;
+}
 
 .sobre-imagem {
     margin: 50px 0px 15px 0px;
@@ -143,6 +148,7 @@ button {
     font-size: 2rem;
     padding: 20px;
     color: var(--cor--titulo);
+    margin: 10px;
 }
 
 .sobre-paragrafo {
@@ -153,7 +159,9 @@ button {
 
 /* Vantagens */
 
-
+.margin {
+    background-color: aqua;
+}
 
 .vantagens {
     background-color: var(--cor--titulo);
@@ -162,8 +170,10 @@ button {
 
 .vantagens-titulo {
     font-size: 2rem;
-    margin: 20px;
-    color: var(--cor--titulo);
+    color: var(--cor--branco);
+    background-color: var(--cor--titulo);
+    text-align: center;
+    padding: 18px;
 }
 
 .icons {
@@ -196,9 +206,15 @@ button {
     margin: 12px;
 }
 
+.fundo-botao {
+    text-align: center;
+    background-color: #146C94;
+}
+
 .botao {
     color: var(--cor--letras);
     background-color: var(--cor--fundo);
+    text-align: center;
 }
 
 /* Perguntas frequentes */
@@ -234,6 +250,9 @@ button {
     margin: 50px 15px 15px 15px;
     background-color: var(--cor--branco);
     border-radius: 8px;    
+    font-size: 1.73rem;
+    padding: 25px;
+    text-align: center;
 }
 
 .chamada-final {
@@ -245,11 +264,13 @@ button {
     font-size: 2rem;
     margin-top: 40px;
     color: var(--cor--titulo);
+    text-align: center;
 }
 
 .chamada-paragrafo {
     font-size: 1.70rem;
-    margin: 18px;
+    text-align: center;
+    padding: 6px;
     
 }
 
@@ -346,12 +367,43 @@ button {
 
 /* Vantagens */
 
-.vantagens-titulo {
-   text-align: center;
+
+.vantagens-titulo{
+   color: var(--cor--branco);
 }
 
-.box {
+.vantagens-box-titulo {
+    color: var(--cor--branco);
+    font-size: 1.7rem;
+    
+}
+
+.vantagens-box-subtitulo {
+    font-size: 1rem;
+}
+
+.icons {
+    padding: 0;
+}
+.vantagens {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vantagens-box {
+    display: flex;
+    width: 33%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.vantagens-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
 }
 
 
