@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
 
-    --branco: #FFF;
-    --cor--fundo--cabecalho: #2C3333 ;
-    --cor--azul-claro: #CBE4DE;
-    --cor--fundo--verde-claro--: #2E4F4F;
-         
+    --cor--branco: #FFF;         
+    --cor--fundo:#F6F1F1;
+    --cor--titulo: #146C94;
+    --cor--letras: #000000;
+    --cor--quadros: #19A7CE;
+
     
 
     font-family: 'Open Sans', sans-serif;
@@ -15,73 +16,63 @@
 /* Logo  da pagina */
 
 body {
-    width: 98vw;
-    background-color: var(--cor--azul-claro);
+    width: 100vw;
+    background-color: var(--cor--fundo);
+    overflow-x: hidden;
 }
 
 .cabecalho {
     text-align: center;
-    background-color:var(--cor--azul-claro);
+    background-color: var(--cor--branco);
+    width: 100vw;
+
 }
 
 .cabecalho-telefone {
-    border: 3px solid var(--cor--azul-claro);
-    background-color:var(--branco);
-    font-size: 1.80rem;
-    text-decoration: none;
-    color: var(--cor--fundo--cabecalho);
-    margin: 0 15px 0 15px;
+    font-size: 1.80rem;   
     border-radius: 8px;
     cursor: pointer;
 }
 
-a :hover  {
-    color:#B5F1CC ;    
-    transition: 0.5s;
-}
-
-
 .cabecalho-whatsapp {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 11px;
+    padding: 5px;
     align-items: center;
     text-decoration: none;
-    color: var(--cor--fundo--cabecalho); 
-}
-
-:hover .cabecalho-whatsapp {
-    background-color: #000000;
-    border-radius: 8px;
-    color: #FFF;
+    color: var(--cor--titulo); 
 }
 
 .icone {
    font-size: 3rem;
+   color: var(--cor--titulo);
 }
 
 
 .apresentacao {
     text-align: center;
     padding: 10px;
-    background-color: var(--cor--azul-claro);
-    color: var(--branco);
+    background-color: var(--cor--fundo);
+    color: var(--cor--letras);
+    
 }
 
 .apresentacao-titulo {
     margin: 40px;
     font-size: 2rem;
-    color: var(--cor--fundo--verde-claro--);
+    color: var(--cor--titulo);
 }
 
 .apresentacao-paragrafo {
-    color: var(--cor--fundo--cabecalho);
+    color: var(--cor--letras);
     font-size: 1.80rem;
 }
 
 .formulario {
    text-align: center;  
-   border: solid 2px #FFF;
-   background-color: var(--branco);
+   border: solid 2px var(--cor--titulo);
+   background-color: var(--cor--branco);
    margin: 40px 15px 0 15px;    
    border-radius: 8px;
    padding: 10px;
@@ -89,7 +80,7 @@ a :hover  {
 
 .formulario-titulo {
     font-size: 2rem;
-    color: var(--cor--fundo--cabecalho);
+    color:var(--cor--titulo);
     padding: 10px;
     margin-top: 20px;
 }
@@ -102,7 +93,7 @@ input {
 }
 
 ::placeholder {
-    color: var(--cor--fundo--cabecalho);
+    color: var(--cor--titulo);
 }
 .form {
     display: flex;
@@ -117,20 +108,19 @@ textarea {
     
 }
 
-
 button {
-   margin: 20px;
+   margin: 15px auto;
    font-size: 1.73rem;
    width: 312px;
    height: 52px;
-   background-color: var(--cor--fundo--cabecalho);
-   color: var(--cor--azul-claro);
+   background-color: var(--cor--quadros);
+   color: var(--cor--branco);
    border-radius: 8px;
    cursor: pointer;
 }
  :hover button {
-    color:var(--cor--fundo--cabecalho) ; 
-    background-color: var(--cor--azul-claro);   
+    color:var(--cor--letras) ; 
+    background-color: var(--cor--fundo);   
     transition: 0.5s;
  }
 
@@ -145,12 +135,14 @@ button {
 .sobre {
     text-align: center;
     margin-top: 10px;
+    background-color: var(--cor--branco);
+    width: 100vw;
 }
 
 .sobre-titulo {
     font-size: 2rem;
     padding: 20px;
-    color: var(--cor--fundo--cabecalho);
+    color: var(--cor--titulo);
 }
 
 .sobre-paragrafo {
@@ -162,10 +154,16 @@ button {
 /* Vantagens */
 
 
+
+.vantagens {
+    background-color: var(--cor--titulo);
+    color: var(--cor--fundo);
+}
+
 .vantagens-titulo {
     font-size: 2rem;
     margin: 20px;
-    color: var(--cor--fundo--cabecalho);
+    color: var(--cor--titulo);
 }
 
 .icons {
@@ -175,7 +173,7 @@ button {
 }
 .vantagens-box-titulo {
     font-size: 2rem;
-    color: var(--cor--fundo--cabecalho);
+    color:var(--cor--titulo);
 }
 
 
@@ -198,6 +196,10 @@ button {
     margin: 12px;
 }
 
+.botao {
+    color: var(--cor--letras);
+    background-color: var(--cor--fundo);
+}
 
 /* Perguntas frequentes */
 
@@ -205,21 +207,23 @@ button {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--branco);
+    background-color: var(--cor--fundo);
     width: 100vw;
 }
 
 .title-perguntas {
     font-size: 2rem;
     margin: 40px;
+    color: var(--cor--titulo);
 }
 
 .perguntas-titulo {
     font-size: 1.73rem;
-    border: solid 1px var(--cor--fundo--cabecalho);
-    margin: 8px 5px 25px 5px;
+    border: solid 1px var(--cor--quadros);
+    margin: 8px 22px 20px 15px;
+    padding: 6px;
+    color: var(--cor--titulo);
     
-    padding: 0 5px 0 5px;   
 }
 
 
@@ -228,7 +232,7 @@ button {
 
 .enviar-agendar {
     margin: 50px 15px 15px 15px;
-    background-color: var(--branco);
+    background-color: var(--cor--branco);
     border-radius: 8px;    
 }
 
@@ -239,18 +243,18 @@ button {
 
 .chamada-titulo {
     font-size: 2rem;
-    text-align: center;
     margin-top: 40px;
-    color: var(--cor--fundo--cabecalho);
+    color: var(--cor--titulo);
 }
 
 .chamada-paragrafo {
-    font-size: 1.73rem;
+    font-size: 1.70rem;
     margin: 18px;
+    
 }
 
 .text-color { 
-    color: #C92C6D;
+    color: var(--cor--quadros);
 }
 
 .tenha-acesso {
@@ -266,6 +270,135 @@ button {
 
 .footer-text {
     text-align: center;
-    background-color: var(--cor--fundo--cabecalho);
-    color: #FFF;
+    background-color: var(--cor--letras);
+    color: var(--cor--branco);
+}
+
+
+
+
+
+
+
+/* Desktop */
+
+
+
+/* Primeira seção Apeperia aplicativos na medida. */
+@media (min-width: 1024px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-around;
+        gap: 268px;      
+}
+
+.apresentacao {
+    display: flex;
+    align-items: baseline;
+    margin-right: 172px;
+    
+}
+
+.apresentacao-titulo {
+    margin-right: 241px;
+}
+
+.apresentacao-titulo-paragrafo {
+    margin-left: 10px;
+}
+
+.apresentacao-paragrafo {
+    font-size: 1.40rem;
+    margin-left: 177px;
+    text-align: initial;
+}
+
+/* Segunda seção Quem somos.*/
+.sobre {
+    text-align: initial;
+}
+
+
+.sobre-imagem {
+    margin-left: 13%;
+}
+
+.sobre-conteudo  {
+    display: flex;
+    justify-content:space-between;
+    align-items: initial;
+    gap: 36px;
+    
+}
+
+.sobre-titulo {
+    padding: 0;
+    margin-top: 75px;
+    text-align: initial;
+}
+
+.sobre-paragrafo {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-right: 22%;
+}
+
+
+/* Vantagens */
+
+.vantagens-titulo {
+   text-align: center;
+}
+
+.box {
+    display: flex;
+}
+
+
+/* Perguntas Frequentes */
+
+.perguntas-titulo {
+    font-size: 1.73rem;
+    
+    border-radius: 8px;
+    margin: 8px 22px 20px 15px;
+    padding: 6px;
+    width: 49%;
+    margin-left: 27%;
+}
+
+/* chamada final */
+
+.chamada-final {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    max-width: 79%;
+    gap: 110px;
+    margin: 27px 0px 50px 120px;
+}
+
+.enviar-agendar {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 17px;
+}
+
+.chamada-titulo-paragrafo{
+    margin: 0;
+    font-size: 1.2rem;
+    margin-top: 26px;
+}
+
+/* footer */
+
+.footer-text {
+    padding: 10px;
+    width: 100vw;
+}
+
+.paragrafo-footer  {
+    padding: 2px;
+}
+
 }

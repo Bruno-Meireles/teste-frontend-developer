@@ -4,13 +4,13 @@
 <g id="Canvas" transform="translate(-2230 1001)">
 <g id="Logo do Apeperia">
 <g id="Oval 1">
-<use xlink:href="#path0_fill" transform="translate(2230 -988.755)" fill="#2E4F4F"/>
+<use xlink:href="#path0_fill" transform="translate(2230 -988.755)" fill="#146C94"/>
 </g>
 <g id="a">
-<use xlink:href="#path1_fill" transform="translate(2239 -1001)" fill="#FFF"/>
+<use xlink:href="#path1_fill" transform="translate(2239 -1001)" fill="#fff"/>
 </g>
 <g id="apeperia">
-<use xlink:href="#path2_fill"  transform="translate(2287.13 -993.208)" fill="#2E4F4F"/>
+<use xlink:href="#path2_fill"  transform="translate(2287.13 -993.208)" fill="#146C94"/>
 </g>
 </g>
 </g>
