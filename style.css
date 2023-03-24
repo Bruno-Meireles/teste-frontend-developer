@@ -11,20 +11,28 @@
     
 
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+  
 }
 
 /* Logo  da pagina */
 
 body {
     width: 100vw;
-    background-color: var(--cor--fundo);
+    background-color: var(--cor--quadros);
     overflow-x: hidden;
+}
+
+.cabecalho-logo {
+    text-align: center;
+    border: solid 1px var(--cor--branco);
+    background-color: var(--cor--fundo);
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
 .cabecalho {
     text-align: center;
-    background-color: var(--cor--branco);
+    background-color: var(--cor--quadros);
     width: 100vw;
 
 }
@@ -38,36 +46,61 @@ body {
 .cabecalho-whatsapp {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 5px;
     align-items: center;
     text-decoration: none;
-    color: var(--cor--titulo); 
+    color: #25D366; 
+    border-radius: 8px;
+    margin-top: 10px;
+    border: ridge;
+    
+}
+
+.whatsapp {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 8px;
+    border-radius: 8px;
+    background-color: var(--cor--branco);
+    color: #25D366;
+}
+
+.whatsapp-texto {
+    font-size: 21px;
+    font-weight: bold;
+    margin-right: 9px;
 }
 
 .icone {
-   font-size: 3rem;
-   color: var(--cor--titulo);
+   font-size: 2rem;
+   color: #25D366;
+   color: var(--cor--branco);
+   font-size: 2.6rem;
+
 }
 
 
 .apresentacao {
     text-align: center;
     padding: 10px;
-    background-color: var(--cor--fundo);
+    background-color: var(--cor--quadros);
     color: var(--cor--letras);
-    
+       
 }
+
 
 .apresentacao-titulo {
     margin: 40px;
-    font-size: 2rem;
-    color: var(--cor--titulo);
+    font-size: 2.5rem;
+    color: var(--cor--branco);
+    font-weight: bold;
 }
 
 .apresentacao-paragrafo {
-    color: var(--cor--letras);
-    font-size: 1.80rem;
+    color: var(--cor--branco);
+    font-size: 1.13rem;
+    margin-left: 372px;
+    line-height: 40px;
+
 }
 
 .formulario {
@@ -90,11 +123,12 @@ input {
     margin: 15px 0px 15px;
     padding: 10px 22px;
     border-radius: 8px;
-    font-size: 1.40rem;
+    font-size: 1.13rem;
 }
 
 ::placeholder {
     color: var(--cor--titulo);
+    font-size: 1.13rem;
 }
 .form {
     display: flex;
@@ -111,8 +145,8 @@ textarea {
 
 .botao {
    margin: 15px auto;
-   font-size: 1.73rem;
-   width: 312px;
+   font-size: 1.10rem;
+   width: 266px;
    height: 52px;
    background-color: var(--cor--quadros);
    color: var(--cor--branco);
@@ -128,9 +162,6 @@ button:hover {
 
   /* Quem somos */ 
 
-.sobre-conteudo {
-    margin-bottom: 47px;
-}
 
 .sobre-imagem {
     margin: 50px 0px 15px 0px;
@@ -145,14 +176,14 @@ button:hover {
 }
 
 .sobre-titulo {
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 20px;
     color: var(--cor--titulo);
     margin: 10px;
 }
 
 .sobre-paragrafo {
-    font-size: 1.73rem;
+    font-size: 1.13rem;
     margin: 40px;    
 }
 
@@ -164,12 +195,15 @@ button:hover {
 }
 
 .vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--cor--titulo);
     color: var(--cor--fundo);
 }
 
 .vantagens-titulo {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--cor--branco);
     background-color: var(--cor--titulo);
     text-align: center;
@@ -184,13 +218,7 @@ button:hover {
 .vantagens-box-titulo {
     font-size: 2rem;
     color:var(--cor--titulo);
-}
-
-
-.vantagens {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
 }
 
 .vantagens-box {
@@ -204,17 +232,24 @@ button:hover {
 .vantagens-box-subtitulo {
     font-size: 1.73rem;
     margin: 12px;
+    text-align: initial;
 }
 
 .fundo-botao {
     text-align: center;
-    background-color: #146C94;
+    background-color: var(--cor--titulo);
 }
 
-.botao {
-    color: var(--cor--letras);
-    background-color: var(--cor--fundo);
-    text-align: center;
+.botao-vantagens {
+    margin: 15px auto;
+   font-size: 1.10rem;
+   width: 266px;
+   height: 52px;
+   background-color: var(--cor--quadros);
+   color: var(--cor--branco);
+   border-radius: 8px;
+   cursor: pointer;
+    
 }
 
 /* Perguntas frequentes */
@@ -258,8 +293,12 @@ button:hover {
 .chamada-final {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
+.chamada-titulo-paragrafo {
+    background-color: var(--cor--branco);
+}
 .chamada-titulo {
     font-size: 2rem;
     margin-top: 40px;
@@ -303,14 +342,21 @@ button:hover {
 
 /* Desktop */
 
-
-
 /* Primeira seção Apeperia aplicativos na medida. */
 @media (min-width: 1024px) {
     .cabecalho {
         display: flex;
         justify-content: space-around;
-        gap: 268px;      
+        gap: 328px;      
+}
+
+
+.cabecalho-whatsapp {
+    background-color: var(--cor--branco);
+}
+
+.cabecalho-logo {
+    border: ridge;
 }
 
 .apresentacao {
@@ -321,7 +367,9 @@ button:hover {
 }
 
 .apresentacao-titulo {
-    margin-right: 241px;
+    text-indent: 144px;
+    text-align: left;
+    font-size: 2.7rem;
 }
 
 .apresentacao-titulo-paragrafo {
@@ -329,11 +377,16 @@ button:hover {
 }
 
 .apresentacao-paragrafo {
-    font-size: 1.40rem;
+    font-size: 1.13rem;
     margin-left: 177px;
     text-align: initial;
 }
 
+
+.icone {
+    color: #25D366;
+
+}
 /* Segunda seção Quem somos.*/
 .sobre {
     text-align: initial;
@@ -342,6 +395,8 @@ button:hover {
 
 .sobre-imagem {
     margin-left: 13%;
+    margin-bottom: 39px;
+
 }
 
 .sobre-conteudo  {
@@ -354,7 +409,7 @@ button:hover {
 
 .sobre-titulo {
     padding: 0;
-    margin-top: 75px;
+    margin-top: 68px;
     text-align: initial;
 }
 
@@ -374,12 +429,16 @@ button:hover {
 
 .vantagens-box-titulo {
     color: var(--cor--branco);
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    text-align: initial;
+    margin: 12px;
     
 }
 
 .vantagens-box-subtitulo {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-align: initial;
+
 }
 
 .icons {
@@ -388,9 +447,13 @@ button:hover {
 .vantagens {
     display: flex;
     flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 0, 20px, 0, 20px;
+    align-content: space-between;
+    align-items: flex-start;    
+}
+
 }
 
 .vantagens-box {
@@ -406,12 +469,15 @@ button:hover {
     font-size: 1rem;
 }
 
+.fundo-botao {
+    background-color: var(--cor--titulo);
+}
+
 
 /* Perguntas Frequentes */
 
 .perguntas-titulo {
-    font-size: 1.73rem;
-    
+    font-size: 1rem;
     border-radius: 8px;
     margin: 8px 22px 20px 15px;
     padding: 6px;
@@ -419,27 +485,50 @@ button:hover {
     margin-left: 27%;
 }
 
+
 /* chamada final */
+
+
+.chamada-titulo-paragrafo {
+    background-color: var(--cor--quadros);
+    margin-top: 33px;
+}
 
 .chamada-final {
     display: flex;
     flex-direction: row;
-    align-items: end;
-    max-width: 79%;
-    gap: 110px;
+    max-width: 75%;
+    gap: 105px;
     margin: 27px 0px 50px 120px;
+
 }
 
-.enviar-agendar {
-    margin: 0;
-    margin-bottom: 12px;
-    padding: 17px;
+.tenha-acesso {
+    font-size: 1rem;
 }
 
-.chamada-titulo-paragrafo{
-    margin: 0;
-    font-size: 1.2rem;
-    margin-top: 26px;
+.botao {
+    font-size: 1,2rem;
+    width: 93%;
+}
+
+.chamada-titulo {
+    text-align: initial;
+    color: var(--cor--branco);
+    margin-left: 85px;
+}
+
+.chamada-paragrafo {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--cor--branco);
+  text-align: left;
+  margin-left: 85px;
+
+}
+
+.paragrafo {
+    font-size: 0.9rem;
 }
 
 /* footer */
